@@ -1,6 +1,5 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+
 import useGetData from '../utills/useGetData';
 
 export default function ScrolledItems (){
@@ -8,10 +7,6 @@ let url="https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.37240&lng=78.437
    
 let scrollData=useGetData(url)
 
-
-
-
-  
 
 
 };
