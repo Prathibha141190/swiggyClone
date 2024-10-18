@@ -10,9 +10,7 @@ function ItemMenu(props) {
     let url="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
    return( itemCards &&
     <div className=' p-1 w-6/12 m-auto border-b-2 border-gray-200 '     
- onClick={()=>{
-    props.handleItems()
- }}
+
   
    >
         <div  className=''
@@ -25,7 +23,9 @@ function ItemMenu(props) {
         <p>({itemCards?.length})</p>
         </div>
        
-    <FontAwesomeIcon icon={faAngleDown}  />
+    <FontAwesomeIcon icon={faAngleDown}  onClick={()=>{
+    props.handleItems()
+ }} />
  </div>
    </div> 
        {props.showIndex && itemCards?.map((eachItem)=>{
@@ -46,7 +46,7 @@ function ItemMenu(props) {
 
 <div className='w-3/12'>
 
- < img src={url+imageId} className='  w-28 rounded'/>
+ {imageId && < img src={url+imageId} className='  w-28 rounded'/>}
 
                 </div>
                 <div>

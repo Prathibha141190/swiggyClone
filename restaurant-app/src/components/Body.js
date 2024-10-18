@@ -60,14 +60,14 @@ setFilterData(ratedRestaur)
     <h1 className="font-bold font-sans text-2xl">What's on your mind?</h1>
 
       
-        <div className="items-center">
+        <div className="items-center p-24 pb-1 pt-2">
                <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={5}
-        slidesPerView={4}
+        slidesPerView={8}
         navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
+    
+      
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
     >
